@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de consulta</title>
+</head>
+<body>
+
+ <!-- Título de la página. -->
+<h1>Jardin Encantado</h1>
+   
+<form action="https://formsubmit.co/ezequielnavas19up@gmail.com"
+      method="POST">
+
+ <fieldset>
+         <legend>Datos del pedido</legend>
+
+<!--Datos para ingresa el nombre de quien realiza el pedido-->
+         <label for="nom">Nombre:</label>
+         <input type="txt"
+                  id="nom"
+                  name="Nombre"
+                  size="30"
+                  maxlength="50"
+                  required="required"/>
+
+ <!--Lista desplegable-->        
+ <p>  <label for="arr">Arreglos:</label>
+         <select id="arr" name="Arreglos">
+            <option value="Ramo de Rosas">Ramo de rosas</option>
+            <option value="Centro de mesa">Centro de mesa</option>
+            <option value="Bucket">Bucket</option>
+            <option value="Bouquet">Bouquet</option>
+            <option value="Arreglo en caja" selected="selected">
+               Arreglo en caja</option>
+         </select></p>
+
+<!--botones para indicar Ocaciones-->
+         <p>Ocasión:
+          <input type="radio" id="oca" name="Ocasión"
+            value="Aniversario de boda" checked="checked" />
+            <label for="Oca">Aniversario de boda</label>
+          <input type="Radio" id="Oca" name="Ocasión"
+            value="Día de la madre" />
+            <label for="Oca">Día de la madre</label>
+          <input type="Radio" id="Oca" name="Ocasión"
+            value="cumpleaños" />
+            <label for="cumpleaños">cumpleaños</label>
+         </p>
+
+ <!--Casillas de verificación-->       
+   <input type="checkbox" id="tarsi"
+        name="Tarjeta" value="Si" />
+      <label for="tarsi">Incluir tarjeta con mensaje</label>
+
+ <input type="checkbox"  id="tarNo"
+        name="Tarjeta" value="No" />
+         <label for="tarNo">No incluir tarjeta</label>
+
+<!--Espacio para ingresar mensaje-->
+       <p><label for="msg">Mensaje:</label><br /> 
+             <textarea id="msg" name="mensaje" rows="3" cols="30"></textarea></p>
+
+  </fieldset>
+
+ <!--Botón para borrar Los Datos-->
+        <p><input type="submit" value="Enviar pedido" /> 
+            <input type="reset" value="Borrar" /></p>
+ </form>
+
+          <form action="https://formsubmit.co/ezequielnavas19up@gmail.com" 
+          method="POST">
+</body>
+</html>
